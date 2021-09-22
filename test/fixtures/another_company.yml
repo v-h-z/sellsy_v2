@@ -35,10 +35,10 @@ http_interactions:
       Vary:
       - Accept-Encoding
       Set-Cookie:
-      - PHPSESSID=kdalmfls11ltq3v0fbba556gmh; path=/
+      - PHPSESSID=42pq2bvd4lqbat9tbe94nc9di8; path=/
       Expires:
       - Thu, 19 Nov 1981 08:52:00 GMT
-      - Tue, 21 Sep 2021 09:55:03 GMT
+      - Wed, 22 Sep 2021 18:28:35 GMT
       Cache-Control:
       - max-age=0, must-revalidate, private
       - no-store, no-cache, must-revalidate
@@ -47,7 +47,7 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       Date:
-      - Tue, 21 Sep 2021 09:55:03 GMT
+      - Wed, 22 Sep 2021 18:28:35 GMT
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Credentials:
@@ -61,13 +61,13 @@ http_interactions:
       X-Quota-Remaining-By-Second:
       - '34'
       X-Quota-Remaining-By-Minute:
-      - '2099'
+      - '2096'
       X-Quota-Remaining-By-Day:
-      - '431985'
+      - '431995'
       X-Request-Id:
-      - 36eabca587a197213866cfbe6cc398deb5bda1cf
+      - bac77e6e583bf6f95dfe21e96cd30e1f5feeda1c
     body:
       encoding: ASCII-8BIT
       string: '{"id":174541,"name":"Les Villages Clubs du Soleil","email":null,"website":null,"phone_number":null,"mobile_number":null,"fax_number":null,"capital":null,"reference":null,"note":"","accounting_code_id":2855,"accounting_purchase_code_id":null,"auxiliary_code":"DIVERS","main_contact_id":160783,"invoicing_contact_id":null,"dunning_contact_id":null,"invoicing_address_id":1046556,"delivery_address_id":null,"rate_category_id":null,"created":"2012-11-15T17:33:07+01:00","is_archived":false,"type":"client","social":{"twitter":null,"facebook":null,"linkedin":null,"viadeo":null},"legal_france":{"siret":null,"siren":null,"vat":null,"ape_naf_code":null,"company_type":null,"rcs_immatriculation":null},"owner":{"id":8306,"type":"staff"}}'
-  recorded_at: Tue, 21 Sep 2021 09:55:03 GMT
+  recorded_at: Wed, 22 Sep 2021 18:28:35 GMT
 recorded_with: VCR 6.0.0

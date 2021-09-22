@@ -29,6 +29,12 @@ class SellsyV2CompanyTest < Minitest::Test
       companies = SellsyV2::Company.all
       assert_equal Array, companies.class
       assert_equal SellsyV2::Company, companies.first.class
+      assert companies.count <= 25
+    end
+
+    VCR.use_cassette("all_companies_with_options") do
+      companies = SellsyV2::Company.all(limit: 50, offset: 5)
+      assert companies.count == 50
     end
   end
 end

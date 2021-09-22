@@ -14,12 +14,18 @@ module SellsyV2
       end
     end
 
-    def self.all
-      Request.new(path: ROOT_PATH, verb: 'get').call.dig('data').map{Company.new(_1)}
+    def self.all(**options)
+      companies_response = Request.new(path: ROOT_PATH, verb: 'get', options: options).call
+      if companies_response.success?
+        companies_response.data.dig('data').map{Company.new(_1)}
+      end
     end
 
-    def self.find(id)
-      Company.new(Request.new(path: "#{ROOT_PATH}/#{id}", verb: 'get').call)
+    def self.find(id, **options)
+      company_response = Request.new(path: "#{ROOT_PATH}/#{id}", verb: 'get', options: options).call
+      if company_response.success?
+        Company.new(company_response.data)
+      end
     end
   end
 end

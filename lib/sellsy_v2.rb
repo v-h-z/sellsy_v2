@@ -11,8 +11,9 @@ module SellsyV2
     require "net/http"
     require "json"
 
-    def initialize(verb:, path:)
-      @url = URI("https://api.sellsy.com/v2#{path}")
+    def initialize(verb:, path:, options:)
+      params = '?' + options.map{|k,v| "#{k}=#{v}"}.join('&')
+      @url = URI("https://api.sellsy.com/v2#{path}#{params}")
     end
 
     def call
@@ -25,9 +26,9 @@ module SellsyV2
       response = https.request(request)
 
       if response.is_a?(Net::HTTPOK)
-        JSON.parse(response.read_body)
+        OpenStruct.new(success?: true, data: JSON.parse(response.read_body))
       else
-        false
+        OpenStruct.new(success?: false, data: response)
       end
     end
   end
