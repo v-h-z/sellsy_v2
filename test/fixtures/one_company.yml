@@ -1,0 +1,73 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.sellsy.com/v2/companies/83426
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.sellsy.com
+      Authorization:
+      - Bearer 98831d12-ba95-5054-bc19-c5986fa69b27
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=10
+      Vary:
+      - Accept-Encoding
+      Set-Cookie:
+      - PHPSESSID=5j5nnqsd127fin9t9cinflfeqi; path=/
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      - Tue, 21 Sep 2021 09:54:33 GMT
+      Cache-Control:
+      - max-age=0, must-revalidate, private
+      - no-store, no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      X-Frame-Options:
+      - SAMEORIGIN
+      Date:
+      - Tue, 21 Sep 2021 09:54:33 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE, OPTIONS, HEAD
+      Access-Control-Allow-Headers:
+      - "*"
+      Access-Control-Expose-Headers:
+      - x-request-id
+      X-Quota-Remaining-By-Second:
+      - '34'
+      X-Quota-Remaining-By-Minute:
+      - '2099'
+      X-Quota-Remaining-By-Day:
+      - '431986'
+      X-Request-Id:
+      - 2252b44af4b1d6cb72f649022e089c67221c38d0
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":83426,"name":"Curius","email":null,"website":null,"phone_number":null,"mobile_number":null,"fax_number":null,"capital":null,"reference":null,"note":"","accounting_code_id":null,"accounting_purchase_code_id":null,"auxiliary_code":null,"main_contact_id":81133,"invoicing_contact_id":null,"dunning_contact_id":null,"invoicing_address_id":599658,"delivery_address_id":null,"rate_category_id":null,"created":"2012-06-19T15:40:42+02:00","is_archived":false,"type":"client","social":{"twitter":null,"facebook":null,"linkedin":null,"viadeo":null},"legal_france":{"siret":null,"siren":null,"vat":null,"ape_naf_code":null,"company_type":null,"rcs_immatriculation":null},"owner":{"id":8306,"type":"staff"}}'
+  recorded_at: Tue, 21 Sep 2021 09:54:33 GMT
+recorded_with: VCR 6.0.0
