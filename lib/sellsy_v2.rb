@@ -33,4 +33,15 @@ module SellsyV2
       end
     end
   end
+
+  class Search
+    ROOT_PATH = '/search'
+
+    def initialize(query:, **options)
+      search_response = Request.new(path: ROOT_PATH, verb: 'get', options: options.merge({q: query})).call
+      if search_response.success?
+        search_response.data.dig('data').map{OpenStruct.new(_1)}
+      end
+    end
+  end
 end

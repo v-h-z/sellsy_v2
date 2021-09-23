@@ -24,6 +24,12 @@ class SellsyV2CompanyTest < Minitest::Test
       refute_nil company
     end
 
+    VCR.use_cassette("BOX_company") do
+      company = SellsyV2::Company.find(15176997)
+      refute_nil company
+      assert_equal 'BOX', company.name
+    end
+
     VCR.use_cassette("company_with_embed_estimates") do
       company = SellsyV2::Company.find(83426, embed: ['estimates'])
       refute_nil company._embed
@@ -50,7 +56,6 @@ class SellsyV2CompanyTest < Minitest::Test
       refute_nil company.addresses
       assert_equal Array, company.addresses.class
       assert_equal SellsyV2::Company::Address, company.addresses.first.class
-      p company.addresses
     end
   end
 end

@@ -1,0 +1,75 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.sellsy.com/v2/search?q=box&type%5B%5D=company
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.sellsy.com
+      Authorization:
+      - Bearer 98831d12-ba95-5054-bc19-c5986fa69b27
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=10
+      Vary:
+      - Accept-Encoding
+      Set-Cookie:
+      - PHPSESSID=9oe4vtsmskealtbr7688lf4q51; path=/
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      - Thu, 23 Sep 2021 12:37:27 GMT
+      Cache-Control:
+      - max-age=0, must-revalidate, private
+      - no-store, no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      X-Frame-Options:
+      - SAMEORIGIN
+      Date:
+      - Thu, 23 Sep 2021 12:37:27 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE, OPTIONS, HEAD
+      Access-Control-Allow-Headers:
+      - "*"
+      Access-Control-Expose-Headers:
+      - x-request-id
+      X-Quota-Remaining-By-Second:
+      - '34'
+      X-Quota-Remaining-By-Minute:
+      - '2098'
+      X-Quota-Remaining-By-Day:
+      - '431962'
+      X-Request-Id:
+      - 1dd16206a55c989451588dbe31ec4ed50a9f264b
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[{"id":"f81a92eb41268abb1ab375bbe396dc49","object":{"type":"company","sub_type":"client","id":15176997},"owner":{"type":"staff","id":98559},"created":"2018-08-29T12:42:50+00:00","updated":"2018-08-29T12:42:50+00:00","is_archived":false,"name":"BOX","mobile_number":"","fax_number":"","phone_number":"","email":"","invoicing_address":null,"delivery_address":null,"main_contact":null},{"id":"6f78c58358c961fc6c6f6e252bd10547","object":{"type":"company","sub_type":"client","id":4544233},"owner":{"type":"staff","id":49206},"created":"2015-10-08T11:25:25+00:00","updated":"2015-10-15T10:37:22+00:00","is_archived":false,"name":"Pbox","mobile_number":"","fax_number":"","phone_number":"","email":"","invoicing_address":{"name":"bureau","id":"11705127","postal_code":"75018","city":"Paris
+        18","country_code":"FR","address_line_1":"97 rue championnet","address_line_2":"","address_line_3":"","address_line_4":""},"delivery_address":{"name":"bureau","id":"11705127","postal_code":"75018","city":"Paris
+        18","country_code":"FR","address_line_1":"97 rue championnet","address_line_2":"","address_line_3":"","address_line_4":""},"main_contact":null}],"aggregations":{"count_by_type":{"company":[2]}},"pagination":{"limit":25,"count":2,"total":2,"offset":"WyI2Zjc4YzU4MzU4Yzk2MWZjNmM2ZjZlMjUyYmQxMDU0NyJd"}}'
+  recorded_at: Thu, 23 Sep 2021 12:37:27 GMT
+recorded_with: VCR 6.0.0

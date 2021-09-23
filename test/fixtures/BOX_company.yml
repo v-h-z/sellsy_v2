@@ -1,0 +1,73 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.sellsy.com/v2/companies/15176997
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.sellsy.com
+      Authorization:
+      - Bearer 98831d12-ba95-5054-bc19-c5986fa69b27
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=10
+      Vary:
+      - Accept-Encoding
+      Set-Cookie:
+      - PHPSESSID=k9cpk7eaqoseubuhuvc7u704rm; path=/
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      - Thu, 23 Sep 2021 12:31:01 GMT
+      Cache-Control:
+      - max-age=0, must-revalidate, private
+      - no-store, no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      X-Frame-Options:
+      - SAMEORIGIN
+      Date:
+      - Thu, 23 Sep 2021 12:31:01 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE, OPTIONS, HEAD
+      Access-Control-Allow-Headers:
+      - "*"
+      Access-Control-Expose-Headers:
+      - x-request-id
+      X-Quota-Remaining-By-Second:
+      - '34'
+      X-Quota-Remaining-By-Minute:
+      - '2099'
+      X-Quota-Remaining-By-Day:
+      - '431970'
+      X-Request-Id:
+      - 1463423c1fbf428ed30390de9db396770028f3d4
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":15176997,"name":"BOX","email":null,"website":null,"phone_number":null,"mobile_number":null,"fax_number":null,"capital":null,"reference":null,"note":"","accounting_code_id":2855,"accounting_purchase_code_id":null,"auxiliary_code":"DIVERS","main_contact_id":32381744,"invoicing_contact_id":null,"dunning_contact_id":null,"invoicing_address_id":null,"delivery_address_id":null,"rate_category_id":8547,"created":"2018-08-29T14:42:50+02:00","is_archived":false,"type":"client","social":{"twitter":null,"facebook":null,"linkedin":null,"viadeo":null},"legal_france":{"siret":null,"siren":null,"vat":null,"ape_naf_code":null,"company_type":null,"rcs_immatriculation":null},"owner":{"id":98559,"type":"staff"}}'
+  recorded_at: Thu, 23 Sep 2021 12:31:01 GMT
+recorded_with: VCR 6.0.0
