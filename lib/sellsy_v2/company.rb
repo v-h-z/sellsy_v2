@@ -27,5 +27,14 @@ module SellsyV2
         Company.new(company_response.data)
       end
     end
+
+    def addresses(**options)
+      verb = 'get'
+      path = "#{ROOT_PATH}/#{id}/addresses"
+      company_addresses_response = Request.new(path: path, verb: verb, options: options).call
+      if company_addresses_response.success?
+        company_addresses_response.data.dig('data').map{Address.new(_1)}
+      end
+    end
   end
 end

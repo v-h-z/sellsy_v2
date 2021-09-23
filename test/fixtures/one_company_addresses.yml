@@ -1,0 +1,357 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.sellsy.com/v2/companies/83426
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.sellsy.com
+      Authorization:
+      - Bearer 98831d12-ba95-5054-bc19-c5986fa69b27
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=10
+      Vary:
+      - Accept-Encoding
+      Set-Cookie:
+      - PHPSESSID=ld63h21sa902akohqsmhgvtupk; path=/
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      - Thu, 23 Sep 2021 12:12:22 GMT
+      Cache-Control:
+      - max-age=0, must-revalidate, private
+      - no-store, no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      X-Frame-Options:
+      - SAMEORIGIN
+      Date:
+      - Thu, 23 Sep 2021 12:12:22 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE, OPTIONS, HEAD
+      Access-Control-Allow-Headers:
+      - "*"
+      Access-Control-Expose-Headers:
+      - x-request-id
+      X-Quota-Remaining-By-Second:
+      - '34'
+      X-Quota-Remaining-By-Minute:
+      - '2099'
+      X-Quota-Remaining-By-Day:
+      - '431988'
+      X-Request-Id:
+      - 841d239a8f4cf439cfcb29cb6b41eecffbddfb48
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":83426,"name":"Curius","email":null,"website":null,"phone_number":null,"mobile_number":null,"fax_number":null,"capital":null,"reference":null,"note":"","accounting_code_id":null,"accounting_purchase_code_id":null,"auxiliary_code":null,"main_contact_id":81133,"invoicing_contact_id":null,"dunning_contact_id":null,"invoicing_address_id":599658,"delivery_address_id":null,"rate_category_id":null,"created":"2012-06-19T15:40:42+02:00","is_archived":false,"type":"client","social":{"twitter":null,"facebook":null,"linkedin":null,"viadeo":null},"legal_france":{"siret":null,"siren":null,"vat":null,"ape_naf_code":null,"company_type":null,"rcs_immatriculation":null},"owner":{"id":8306,"type":"staff"}}'
+  recorded_at: Thu, 23 Sep 2021 12:12:22 GMT
+- request:
+    method: get
+    uri: https://api.sellsy.com/v2/companies/83426/addresses
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.sellsy.com
+      Authorization:
+      - Bearer 98831d12-ba95-5054-bc19-c5986fa69b27
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=10
+      Vary:
+      - Accept-Encoding
+      Set-Cookie:
+      - PHPSESSID=jmgerbbf6kui5v1ou66ino7gor; path=/
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      - Thu, 23 Sep 2021 12:12:22 GMT
+      Cache-Control:
+      - max-age=0, must-revalidate, private
+      - no-store, no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      X-Frame-Options:
+      - SAMEORIGIN
+      Date:
+      - Thu, 23 Sep 2021 12:12:22 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE, OPTIONS, HEAD
+      Access-Control-Allow-Headers:
+      - "*"
+      Access-Control-Expose-Headers:
+      - x-request-id
+      X-Quota-Remaining-By-Second:
+      - '33'
+      X-Quota-Remaining-By-Minute:
+      - '2098'
+      X-Quota-Remaining-By-Day:
+      - '431987'
+      X-Request-Id:
+      - cbe874212c7b94358a064ef30df92553461a0db5
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[{"id":599658,"name":"Bureaux","address_line_1":"1bis passage
+        des Marais","address_line_2":"","address_line_3":"","address_line_4":"","postal_code":"75010","city":"Paris","country_code":"FR","country":"France","is_invoicing_address":true,"is_delivery_address":false,"geocode":{"lat":48.8712,"lng":2.361}}],"pagination":{"limit":25,"count":1,"total":1,"offset":"WyI1OTk2NTgiXQ=="}}'
+  recorded_at: Thu, 23 Sep 2021 12:12:22 GMT
+- request:
+    method: get
+    uri: https://api.sellsy.com/v2/companies/83426/addresses
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.sellsy.com
+      Authorization:
+      - Bearer 98831d12-ba95-5054-bc19-c5986fa69b27
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=10
+      Vary:
+      - Accept-Encoding
+      Set-Cookie:
+      - PHPSESSID=q5gi4226e74eiidu3nfb3l0tiv; path=/
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      - Thu, 23 Sep 2021 12:12:23 GMT
+      Cache-Control:
+      - max-age=0, must-revalidate, private
+      - no-store, no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      X-Frame-Options:
+      - SAMEORIGIN
+      Date:
+      - Thu, 23 Sep 2021 12:12:23 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE, OPTIONS, HEAD
+      Access-Control-Allow-Headers:
+      - "*"
+      Access-Control-Expose-Headers:
+      - x-request-id
+      X-Quota-Remaining-By-Second:
+      - '32'
+      X-Quota-Remaining-By-Minute:
+      - '2097'
+      X-Quota-Remaining-By-Day:
+      - '431986'
+      X-Request-Id:
+      - c8d2ff98d201dda4fcbbf568b1556a40a8e49249
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[{"id":599658,"name":"Bureaux","address_line_1":"1bis passage
+        des Marais","address_line_2":"","address_line_3":"","address_line_4":"","postal_code":"75010","city":"Paris","country_code":"FR","country":"France","is_invoicing_address":true,"is_delivery_address":false,"geocode":{"lat":48.8712,"lng":2.361}}],"pagination":{"limit":25,"count":1,"total":1,"offset":"WyI1OTk2NTgiXQ=="}}'
+  recorded_at: Thu, 23 Sep 2021 12:12:23 GMT
+- request:
+    method: get
+    uri: https://api.sellsy.com/v2/companies/83426/addresses
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.sellsy.com
+      Authorization:
+      - Bearer 98831d12-ba95-5054-bc19-c5986fa69b27
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=10
+      Vary:
+      - Accept-Encoding
+      Set-Cookie:
+      - PHPSESSID=qq1acp2jelrucb5ndqii34t3mj; path=/
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      - Thu, 23 Sep 2021 12:12:23 GMT
+      Cache-Control:
+      - max-age=0, must-revalidate, private
+      - no-store, no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      X-Frame-Options:
+      - SAMEORIGIN
+      Date:
+      - Thu, 23 Sep 2021 12:12:23 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE, OPTIONS, HEAD
+      Access-Control-Allow-Headers:
+      - "*"
+      Access-Control-Expose-Headers:
+      - x-request-id
+      X-Quota-Remaining-By-Second:
+      - '34'
+      X-Quota-Remaining-By-Minute:
+      - '2096'
+      X-Quota-Remaining-By-Day:
+      - '431985'
+      X-Request-Id:
+      - 3b3e312a652c02bc6e4270021c08a5e10439d0c8
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[{"id":599658,"name":"Bureaux","address_line_1":"1bis passage
+        des Marais","address_line_2":"","address_line_3":"","address_line_4":"","postal_code":"75010","city":"Paris","country_code":"FR","country":"France","is_invoicing_address":true,"is_delivery_address":false,"geocode":{"lat":48.8712,"lng":2.361}}],"pagination":{"limit":25,"count":1,"total":1,"offset":"WyI1OTk2NTgiXQ=="}}'
+  recorded_at: Thu, 23 Sep 2021 12:12:23 GMT
+- request:
+    method: get
+    uri: https://api.sellsy.com/v2/companies/83426/addresses
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.sellsy.com
+      Authorization:
+      - Bearer 98831d12-ba95-5054-bc19-c5986fa69b27
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=10
+      Vary:
+      - Accept-Encoding
+      Set-Cookie:
+      - PHPSESSID=ke34rnqa0kolc9spdfd83d06bc; path=/
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      - Thu, 23 Sep 2021 12:12:23 GMT
+      Cache-Control:
+      - max-age=0, must-revalidate, private
+      - no-store, no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      X-Frame-Options:
+      - SAMEORIGIN
+      Date:
+      - Thu, 23 Sep 2021 12:12:23 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE, OPTIONS, HEAD
+      Access-Control-Allow-Headers:
+      - "*"
+      Access-Control-Expose-Headers:
+      - x-request-id
+      X-Quota-Remaining-By-Second:
+      - '33'
+      X-Quota-Remaining-By-Minute:
+      - '2095'
+      X-Quota-Remaining-By-Day:
+      - '431984'
+      X-Request-Id:
+      - bda52914579cdebd8065ae5b8f5ab3b34380861d
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[{"id":599658,"name":"Bureaux","address_line_1":"1bis passage
+        des Marais","address_line_2":"","address_line_3":"","address_line_4":"","postal_code":"75010","city":"Paris","country_code":"FR","country":"France","is_invoicing_address":true,"is_delivery_address":false,"geocode":{"lat":48.8712,"lng":2.361}}],"pagination":{"limit":25,"count":1,"total":1,"offset":"WyI1OTk2NTgiXQ=="}}'
+  recorded_at: Thu, 23 Sep 2021 12:12:23 GMT
+recorded_with: VCR 6.0.0

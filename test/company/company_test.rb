@@ -21,6 +21,12 @@ class SellsyV2CompanyTest < Minitest::Test
 
     VCR.use_cassette("another_company") do
       company = SellsyV2::Company.find(174541)
+      refute_nil company
+    end
+
+    VCR.use_cassette("company_with_embed_estimates") do
+      company = SellsyV2::Company.find(83426, embed: ['estimates'])
+      refute_nil company._embed
     end
   end
 
@@ -35,6 +41,16 @@ class SellsyV2CompanyTest < Minitest::Test
     VCR.use_cassette("all_companies_with_options") do
       companies = SellsyV2::Company.all(limit: 50, offset: 5)
       assert companies.count == 50
+    end
+  end
+
+  def test_addresses_method_returns_array_of_addresses
+    VCR.use_cassette("one_company_addresses") do
+      company = SellsyV2::Company.find(83426)
+      refute_nil company.addresses
+      assert_equal Array, company.addresses.class
+      assert_equal SellsyV2::Company::Address, company.addresses.first.class
+      p company.addresses
     end
   end
 end

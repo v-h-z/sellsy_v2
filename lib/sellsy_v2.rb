@@ -2,6 +2,7 @@
 
 require_relative "sellsy_v2/version"
 require_relative "sellsy_v2/company"
+require_relative "sellsy_v2/company/address"
 
 module SellsyV2
   class Error < StandardError; end
@@ -12,7 +13,7 @@ module SellsyV2
     require "json"
 
     def initialize(verb:, path:, options:)
-      params = '?' + options.map{|k,v| "#{k}=#{v}"}.join('&')
+      params = '?' + options.map{|k,v| v.class == Array ? "#{k}[]=#{v.join(',')}" : "#{k}=#{v}"}.join('&')
       @url = URI("https://api.sellsy.com/v2#{path}#{params}")
     end
 
